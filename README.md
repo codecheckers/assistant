@@ -11,11 +11,19 @@ A CLI tool to assist codecheckers
   - detect full paths
   - detect paths not within subdirectories of the workspace
   - detect hidden directories (`.git`, ..)
+  - `LICENSE` file
+  - code file syntax
+  - file validy (parse XML?, load a CSV?)
+- rules for default workflow/implementation
+  - `MANIFEST` file
+  - `Makefile`
   - ...
+- "code smell" concepts could be useful to explore
 - CLI
   - `codecheck https://github.com/codecheckers/Hopfield-1982`
   - `codecheck .`
   - `codecheck --rules=all (/)full/or/relative/path`
+  - `codecheck --implementation=default git+https://git.universitry.org/repo`
 - Browser-UI
   - simple, like BinderHub
   
