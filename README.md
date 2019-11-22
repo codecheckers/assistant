@@ -49,6 +49,12 @@ A CLI tool to assist codecheckers
     - https://binx.io/blog/2018/11/25/go-cli-apps/
     - https://towardsdatascience.com/how-to-create-a-cli-in-golang-with-cobra-d729641c7177
     - linters, e.g. https://github.com/ropenscilabs/checkers
+    - can probably be wrapped in Python and R packages
+      - https://www.nathanvangheem.com/posts/2017/06/03/embedding-golang-in-python-with-groupcache.html
+      - https://medium.com/learning-the-go-programming-language/calling-go-functions-from-other-languages-4c7d8bcc69bf
+      - https://hackernoon.com/extending-python-3-in-go-78f3a69552ac
+      - https://github.com/go-python/gopy
+      - https://github.com/nchern/go-R
 - R
   - resources
     - https://github.com/r-lib/cli
