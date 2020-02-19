@@ -59,3 +59,5 @@ A CLI tool to assist codecheckers
   - resources
     - https://github.com/r-lib/cli
     - https://colinfay.me/create-r-cli-npm/
+    - https://github.com/eblondel/zen4R/wiki#package_overview
+
