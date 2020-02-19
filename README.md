@@ -56,7 +56,7 @@ A CLI tool to assist codecheckers
       - https://github.com/go-python/gopy
       - https://github.com/nchern/go-R
 - R
-  - pro: community review process is based on R Markdown for report creation, good interfacing to other languages, familiarity of @sje30 and @nuest
+  - pro: community review process is based on R Markdown for report creation, good interfacing to other languages, familiarity of @sje30 and @nuest, probably every third party service we want to connect to has already a package
   - resources
     - https://github.com/r-lib/cli
     - https://colinfay.me/create-r-cli-npm/
