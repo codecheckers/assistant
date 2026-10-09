@@ -95,7 +95,7 @@ A CODECHECK confirms that the computations can be executed. It does not assess s
 Building an environment beyond what the authors provide requires the codechecker's confirmation (see above). Once it is confirmed:
 
 - Use Docker, with `rocker/r-ver:<authors' R version>`.
-- **groundhog:**
+- When the authors already use it, consider these settings for the **groundhog** package in the container:
   - Call `groundhog::set.groundhog.folder("/opt/groundhog")` in its own `RUN` step.
   - Do not set `ENV GROUNDHOG_FOLDER` before it, or the call fails.
   - About 160 packages from source take about 25 minutes.
@@ -127,16 +127,7 @@ Building an environment beyond what the authors provide requires the codechecker
 - Expected values in comments of the authors' scripts help with checking.
 - State which results cannot be reproduced because of anonymisation, and whether the authors document this.
 
-## codecheck package quirks
+## Development of these instructions
 
-Fixed on the package `master` (unreleased); needed with v0.31.0.9000 and earlier:
-
-- **Subtitles (#96):** CC-MET-005 compared against the main title only. Use the main title in `paper.title`.
-- **Several repositories (#97):** the summary functions failed with a list of URLs. Pass a modified copy of `metadata`.
-- **Spaces in file names (#98):** `\path{}` dropped them. Add `\PassOptionsToPackage{obeyspaces,spaces}{url}` to `codecheck-preamble.sty`.
-- **Word/RTF outputs (#99):** `render_manifest_files()` converts them with pandoc. Mention pandoc's RTF character losses in the certificate. Do not extract data with xml2.
-
-Still open:
-
-- **Images:** Quarto rewrites absolute image paths to `./home/...`. Make `manifest_df$dest` relative (`outputs/...`).
-- **YAML directive:** CC-CFG-002 fails if the file starts with `%YAML 1.2` instead of `---`.
+An online copy of this file is developed jointly by the codecheckers community at https://github.com/codecheckers/assistant/blob/master/ASSISTANT.md.
+After each certificate creation, revisit the local session history to see what lessons learned or improvements can be made to the instructions file, and analyse the local copy for any changes. Propose how to proceed and merge diverging instruction files.
