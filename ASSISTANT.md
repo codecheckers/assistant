@@ -38,11 +38,20 @@ A CODECHECK confirms that the computations can be executed. It does not assess s
 
 ## Certificate style
 
-- Keep the language terse and factual.
-- No storylines, and no account of unsuccessful attempts unless the codechecker asks for one.
+- Keep the language terse and factual. No praise or evaluative adjectives about the authors' work, and no judgement on whether differences affect the article's conclusions.
+- No storylines, and no account of unsuccessful attempts (e.g. download outages) unless the codechecker asks for one.
 - Report what was run, what matches, and what differs, with numbers.
-- Put executed code in fenced code blocks, not inline backticks in the prose, so it can be copied and run.
-- Keep the certificate short. Details belong in tables, the manifest, or the bundle.
+- Keep the certificate short; details belong in tables, the manifest, or the bundle.
+- State each fact once: the summary lives in `codecheck.yml`, so do not repeat it in the notes; no separate Summary section.
+- **Licensing:** name the items and licenses with citations, say how they were obtained, and say what is not deposited. Do not paraphrase license terms or list how the check complies with them; no checksum tables.
+- **Computing environment:** what the authors documented, what was built for the check, and deviations such as unpinned packages. No lists of package versions; the session info and the bundle hold them.
+- **Steps of the check:** one fenced code block with the executed commands, with explanations as comments in that block. Never put executed code only in inline backticks in the prose.
+- **Attribution:** write "the AI coding assistant" for what the assistant did (environment, wrapper, comparisons), and "I" only for what the codechecker did themselves.
+- Mark comparisons that only the assistant did with "(AI report)" until the codechecker has verified them. Say which parts the codechecker only spot-checked.
+- Report differences that matter for the numbers. Leave out cosmetic figure differences (titles, fonts, frames) and console rounding artefacts.
+- Use only as much precision as the facts support ("less than a minute", not "about 30 seconds"), and avoid overstatements ("most packages" when one is unpinned).
+- **Recommendations:** at most about four, short, about the reproducibility of the workflow. No specific function advice or licensing advice.
+- **Acknowledgements:** keep the template's AI disclosure; no thanks that evaluate the authors' work.
 
 ## Workflow
 
