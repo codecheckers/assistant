@@ -50,7 +50,7 @@ A CODECHECK confirms that the computations can be executed. It does not assess s
 - Mark comparisons that only the assistant did with "(AI report)" until the codechecker has verified them. Say which parts the codechecker only spot-checked.
 - Report differences that matter for the numbers. Leave out cosmetic figure differences (titles, fonts, frames) and console rounding artefacts.
 - Use only as much precision as the facts support ("less than a minute", not "about 30 seconds"), and avoid overstatements ("most packages" when one is unpinned).
-- **Recommendations:** at most about four, short, about the reproducibility of the workflow. No specific function advice or licensing advice.
+- **Recommendations:** at most about four, short, about the reproducibility of the workflow. No specific function advice or licensing advice: do not propose a specific license. Do point out a missing license or an unclear licensing status.
 - **Acknowledgements:** keep the template's AI disclosure; no thanks that evaluate the authors' work.
 
 ## Workflow
@@ -90,6 +90,8 @@ A CODECHECK confirms that the computations can be executed. It does not assess s
 ## Licensing of checked materials
 
 - Check the license of every item used: article, code, data, supplements.
+- Never add a license file to the authors' materials or propose a specific license.
+- A missing license or an unclear licensing status does not stop the check: report it to the codechecker, who points it out in the feedback to the authors and the certificate's recommendations.
 - In the certificate, cite each item with creators, title, repository, DOI, and license. Give the license's own DOI if it has one.
 - Licenses that forbid redistribution, e.g. the PsychArchives Scientific Use License v1 (doi:10.23668/psycharchives.4988):
   - Never deposit the code, the data, or patched copies.
